@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #0066cc, #0099cc);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    /* Navigation */
+    nav {
+      background: #004d80;
+      text-align: center;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #006699;
+      border-radius: 5px;
+    }
+
+    /* Section */
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      color: #0066cc;
+      margin-bottom: 15px;
+      border-left: 5px solid #0099cc;
+      padding-left: 10px;
+    }
+    section p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    /* Skills List */
+    ul.skills {
+      list-style-type: square;
+      margin: 10px 0 20px 30px;
+      font-size: 1.1rem;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #0066cc;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background: #f2f9ff;
+    }
+    tr:hover {
+      background: #d9f0ff;
+    }
+
+    /* Cards (Display Example) */
+    .cards {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .card {
+      display: inline-block;
+      width: 280px;
+      margin: 15px;
+      padding: 15px;
+      background: white;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+      vertical-align: top;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #004d80;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(to right, #004d80, #006699);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+    footer h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .social-icons {
+      margin: 15px 0;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0 12px;
+      font-size: 22px;
+      color: white;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #00e6ff;
+      transform: scale(1.2);
+    }
+    footer p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-user-graduate"></i> Student Portfolio</h1>
+    <p>Learning Web Development with HTML & CSS</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Skills</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! My name is <b>Priya</b>, and I am currently learning <span style="color:#0099cc;">Web Development</span>.  
+    I started with HTML, and now I’m practicing CSS.  
+    I love <i class="fa-solid fa-laptop-code"></i> coding and designing creative web pages.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section>
+    <h2>My Skills</h2>
+    <ul class="skills">
+      <li>HTML – Completed</li>
+      <li>CSS Basics – Learning</li>
+      <li>Responsive Design – Upcoming</li>
+    </ul>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Course Progress</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>Status</th>
+        <th>Completion %</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Completed</td>
+        <td>100%</td>
+      </tr>
+      <tr>
+        <td>CSS Basics</td>
+        <td>Ongoing</td>
+        <td>60%</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Upcoming</td>
+        <td>0%</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Hobbies (Cards with display:inline-block + max-width) -->
+  <section>
+    <h2>My Hobbies</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://dummyimage.com/250x150/cccccc/000000&text=Demo" alt="Coding Hobby">
+        <h3>Coding</h3>
+        <p>I enjoy building web projects and learning new coding skills.</p>
+      </div>
+      <div class="card">
+        <img src="https://dummyimage.com/250x150/cccccc/000000&text=Demo" alt="Reading Hobby">
+        <h3>Reading</h3>
+        <p>I love reading books about technology and web design trends.</p>
+      </div>
+      <div class="card">
+        <img src="https://dummyimage.com/250x150/cccccc/000000&text=Demo" alt="Music Hobby">
+        <h3>Music</h3>
+        <p>Listening to music keeps me relaxed and focused while studying.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>Connect with Me</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p>&copy; 2025 Student Portfolio | Designed with ❤️ using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
